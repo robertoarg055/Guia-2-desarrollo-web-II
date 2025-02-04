@@ -33,6 +33,7 @@ function App() {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0);
   }
 // Funciones complementarias
+// Referemcias de ayuda para reaiizar esta parte https://programadorwebvalencia.com/javascript-ejemplo-carrito-de-compra/
   function increaseQuantity(guitar) {
     setCart(cart.map(item => 
       item.id === guitar.id ? { ...item, quantity: item.quantity + 1 } : item
